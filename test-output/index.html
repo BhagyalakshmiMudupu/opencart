@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-OpencartSuite" class="navigator-link">
-              <span class="suite-name border-failed">OpencartSuite</span>
+              <span class="suite-name border-passed">OpencartSuite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-OpencartSuite" class="hide-methods failed suite-OpencartSuite"> (hide)</a> <!-- hide-methods failed suite-OpencartSuite -->
-                      <a href="#" panel-name="suite-OpencartSuite" class="show-methods failed suite-OpencartSuite"> (show)</a> <!-- show-methods failed suite-OpencartSuite -->
-                    </span>
-                    <div class="method-list-content failed suite-OpencartSuite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-OpencartSuite" title="testCases.TC_001_AccountRegistrationTest" class="method navigator-link" hash-for-method="test_accountRegistration">test_accountRegistration</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-OpencartSuite -->
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -118,6 +104,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-OpencartSuite" title="testCases.TC_002_LoginTest" class="method navigator-link" hash-for-method="test_Login">test_Login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-OpencartSuite" title="testCases.TC_001_AccountRegistrationTest" class="method navigator-link" hash-for-method="test_accountRegistration">test_accountRegistration</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-OpencartSuite -->
@@ -132,9 +123,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-OpencartSuite" class="panel OpencartSuite">
-          <div class="suite-OpencartSuite-class-failed">
+          <div class="suite-OpencartSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">testCases.TC_001_AccountRegistrationTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -143,15 +134,10 @@
                   <a name="test_accountRegistration">
                   </a> <!-- test_accountRegistration -->
                   <span class="method-name">test_accountRegistration</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Your Account Has Been Created!++] but found [Your Account Has Been Created!]
-	at testCases.TC_001_AccountRegistrationTest.test_accountRegistration(TC_001_AccountRegistrationTest.java:62)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-... Removed 33 stack frames
-</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-OpencartSuite-class-failed -->
+          </div> <!-- suite-OpencartSuite-class-passed -->
           <div class="suite-OpencartSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -181,7 +167,7 @@
     &lt;listener class-name=&quot;utilities.ExtentReportManager&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;OpencartTest&quot;&gt;
-    &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testCases.TC_001_AccountRegistrationTest&quot;/&gt;
       &lt;class name=&quot;testCases.TC_002_LoginTest&quot;/&gt;
@@ -256,16 +242,16 @@ data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'test_accountRegistration')
 data.setCell(0, 2, 'testCases.TC_001_AccountRegistrationTest')
-data.setCell(0, 3, 5965);
+data.setCell(0, 3, 5606);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'test_Login')
 data.setCell(1, 2, 'testCases.TC_002_LoginTest')
-data.setCell(1, 3, 1052);
+data.setCell(1, 3, 1117);
 window.suiteTableData['OpencartSuite']= { tableData: data, tableDiv: 'times-div-OpencartSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 6 seconds</span>
               <div id="times-div-OpencartSuite">
               </div> <!-- times-div-OpencartSuite -->
             </div> <!-- times-div -->
@@ -293,33 +279,31 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC_001_AccountRegistrationTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup(edge)</span>
+                <span class="method-name">setup(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">test_accountRegistration</span>
-                <span class="method-start">4270 ms</span>
+                <span class="method-start">3408 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">10431 ms</span>
+                <span class="method-start">9027 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testCases.TC_002_LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setup(edge)</span>
-                <span class="method-start">10835 ms</span>
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">9255 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">test_Login</span>
-                <span class="method-start">12909 ms</span>
+                <span class="method-start">11238 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">13962 ms</span>
+                <span class="method-start">12356 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
